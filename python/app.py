@@ -112,7 +112,7 @@ def predict_deduction():
         'breakdown': {'pf': pf, 'professional_tax': pt, 'income_tax': tax}
     })
 
-@app.route('/analyze_productivity', methods=['POST'])
+"""@app.route('/analyze_productivity', methods=['POST'])
 def analyze_productivity():
     data = request.json
     perf_rating = float(data.get('PerformanceRating', 3))
@@ -129,7 +129,7 @@ def analyze_productivity():
     hours_score = max(0, 20 - hours_penalty)
     
     total_score = round(score + proj_score + hours_score, 2)
-    return jsonify({'productivity_score': total_score})
+    return jsonify({'productivity_score': total_score})"""
 
 if __name__ == '__main__':
     app.run(debug=True, port=5000)
