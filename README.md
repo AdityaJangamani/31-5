@@ -1,6 +1,6 @@
 # AI-Driven Intelligent Employee Remuneration & Attrition Prediction System
 
-A full-stack HR administration platform powered by open-source Python machine learning models (scikit-learn). The system provides prediction hubs for salary recommendation, attrition probability, promotional readiness, employee categorization, and productivity scoring — all served through a premium glassmorphism dark-mode UI.
+A full-stack administration platform powered by open-source Python machine learning models (scikit-learn). The system provides prediction hubs for salary recommendation, attrition probability, promotional readiness, employee categorization, and productivity scoring — all served through a premium glassmorphism dark-mode UI.
 
 ---
 
@@ -27,7 +27,7 @@ A full-stack HR administration platform powered by open-source Python machine le
 - ✅ **Productivity Scoring** — Weighted composite score from performance, projects, and hours
 - ✅ **Bonus & Deduction Calculator** — Rule-based prediction for bonuses and statutory deductions (PF, PT, Income Tax)
 
-### HR Administration (Admin/HR Portal)
+### Administration (Admin Portal)
 - ✅ **Live Employee Directory** — Search, filter, and manage the workforce
 - ✅ **Daily Attendance Management** — Real-time sign-in/out tracking with anomaly detection
 - ✅ **Salary & Payslip Management** — Add salaries, generate and email digital payslips
@@ -116,7 +116,7 @@ SMTP_PORT=587
 SMTP_SECURE=tls
 SMTP_USERNAME=your_email@gmail.com
 SMTP_PASSWORD=your_app_password
-SMTP_FROM_NAME=HR AI System
+SMTP_FROM_NAME=AI System
 ```
 > **Tip:** For Gmail, enable 2FA and generate an [App Password](https://myaccount.google.com/apppasswords) instead of using your real password.
 
@@ -271,7 +271,7 @@ Relationships:
 ├── .gitignore                       # Git ignore rules
 │
 ├── auth/
-│   ├── admin_login.php              # Admin/HR login page
+│   ├── admin_login.php              # Admin login page
 │   ├── employee_login.php           # Employee login page
 │   ├── logout.php                   # Admin logout handler
 │   └── employee_logout.php          # Employee logout handler

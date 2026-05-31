@@ -30,8 +30,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Login — HR AI System</title>
-    <meta name="description" content="Secure admin login for the HR AI Employee Analytics System.">
+    <title>Admin Login — AI Analytics System</title>
+    <meta name="description" content="Secure admin login for the AI Employee Analytics System.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -299,7 +299,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <!-- Left Branding Panel -->
     <div class="login-left">
         <div class="brand-icon">&#128101;</div>
-        <h2 class="brand-title">HR AI Analytics<br>System</h2>
+        <h2 class="brand-title">AI Analytics<br>System</h2>
         <p class="brand-subtitle">A smart, AI-powered platform for managing employee remuneration, attrition, and performance predictions.</p>
         <ul class="features-list">
             <li><span class="icon">&#10003;</span> Salary &amp; Payslip Management</li>
@@ -340,7 +340,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             <a href="employee_login.php" class="employee-link">&#128100; Employee Login &rarr;</a>
 
-            <p class="footer-note">HR AI System &copy; <?= date('Y') ?> &mdash; Powered by AI Analytics</p>
+            <p class="footer-note">AI Analytics System &copy; <?= date('Y') ?> &mdash; Powered by AI Analytics</p>
         </div>
     </div>
 </body>

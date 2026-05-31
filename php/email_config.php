@@ -28,4 +28,4 @@ define('SMTP_PORT',      (int)(getenv('SMTP_PORT') ?: 587));
 define('SMTP_SECURE',    getenv('SMTP_SECURE')     ?: 'tls');
 define('SMTP_USERNAME',  getenv('SMTP_USERNAME')    ?: '');
 define('SMTP_PASSWORD',  getenv('SMTP_PASSWORD')    ?: '');
-define('SMTP_FROM_NAME', getenv('SMTP_FROM_NAME')   ?: 'HR AI System');
+define('SMTP_FROM_NAME', getenv('SMTP_FROM_NAME')   ?: 'AI System');

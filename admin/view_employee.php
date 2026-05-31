@@ -26,7 +26,7 @@ $employees = $pdo->query("SELECT * FROM employees ORDER BY employee_id DESC")->f
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>View Employees - HR AI System</title>
+    <title>View Employees - AI System</title>
     <link rel="stylesheet" href="../css/style.css">
     <style>
         .search-wrap {

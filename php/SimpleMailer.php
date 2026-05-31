@@ -16,7 +16,7 @@ class SimpleMailer
     /** @var resource */
     private $socket;
 
-    public function __construct(string $username, string $password, string $fromName = 'HR AI System')
+    public function __construct(string $username, string $password, string $fromName = 'AI System')
     {
         $this->username  = $username;
         $this->password  = $password;

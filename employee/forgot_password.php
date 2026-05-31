@@ -74,7 +74,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !csrf_verify()) {
         <tr>
           <td style="background:linear-gradient(135deg,#10B981,#059669);
                       padding:32px 40px;text-align:center;">
-            <h1 style="margin:0;color:#fff;font-size:22px;">HR AI System</h1>
+            <h1 style="margin:0;color:#fff;font-size:22px;">AI System</h1>
             <p style="margin:6px 0 0;color:rgba(255,255,255,.8);font-size:13px;">Password Reset Request</p>
           </td>
         </tr>
@@ -83,7 +83,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !csrf_verify()) {
           <td style="padding:36px 40px 28px;">
             <p style="margin:0 0 12px;font-size:15px;color:#374151;">Hi <strong>{$name}</strong>,</p>
             <p style="margin:0 0 24px;font-size:14px;color:#6b7280;line-height:1.7;">
-              We received a request to reset your HR Portal password. Use the verification code below:
+              We received a request to reset your Portal password. Use the verification code below:
             </p>
             <!-- OTP Box -->
             <div style="text-align:center;margin:0 0 28px;">
@@ -106,7 +106,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !csrf_verify()) {
         <!-- Footer -->
         <tr>
           <td style="background:#f9fafb;padding:16px 40px;text-align:center;">
-            <p style="margin:0;font-size:11px;color:#9ca3af;">HR AI System Inc. · Automated Message — Do not reply</p>
+            <p style="margin:0;font-size:11px;color:#9ca3af;">AI System Inc. · Automated Message — Do not reply</p>
           </td>
         </tr>
       </table>
@@ -121,7 +121,7 @@ HTML;
                 $mailer->send(
                     $email,
                     $emp['first_name'],
-                    'Your HR Portal Password Reset Code',
+                    'Your Password Reset Code',
                     $html
                 );
                 $success = "A 6-digit verification code has been sent to <strong>{$email}</strong>. Check your inbox (and spam folder).";
@@ -196,7 +196,7 @@ if ($success === 'PASSWORD_RESET_OK') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reset Password — HR AI System</title>
+    <title>Reset Password — AI System</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }

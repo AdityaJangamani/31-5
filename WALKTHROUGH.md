@@ -1,4 +1,4 @@
-# 🖥️ Codebase Walkthrough: HR Admin & Attrition Prediction System
+# 🖥️ Codebase Walkthrough: Admin & Attrition Prediction System
 
 Welcome to the technical walkthrough of the **AI-Driven Intelligent Employee Remuneration & Attrition Prediction System**. This document outlines the system's full-stack architecture, key modules, code patterns, machine learning paradigms, database schemas, and robust security frameworks.
 
@@ -25,7 +25,7 @@ graph TD
 
 ### Key Subsystems:
 1. **Glassmorphism UI Engine:** Modern custom Vanilla CSS implementation utilizing Tailwind-like variables but styled raw with custom transparency filters, gradient typography, state translations, and grid-responsive dashboard pages.
-2. **HR Administration Core (PHP):** Handles RBAC (Role-Based Access Control), employee directories, CSV bulk uploads, attendance tracking, manager feedback logs, announcements, and payroll generation.
+2. **Administration Core (PHP):** Handles RBAC (Role-Based Access Control), employee directories, CSV bulk uploads, attendance tracking, manager feedback logs, announcements, and payroll generation.
 3. **ML Prediction Engine (Python/Flask):** Evaluates salary appropriateness, attrition threat, promotion eligibility, and categorizes high-performing or steady personnel using lightweight models loaded via `joblib`.
 
 ---
@@ -201,7 +201,7 @@ $$\mathbf{X} = \{\text{Age}, \text{YearsAtCompany}, \text{BaseSalary}, \text{Job
 1. **Salary Recommendation (Linear Regression):**
    * **Algorithm:** `LinearRegression()`
    * **Target:** Recommended Base Salary in local currency (₹).
-   * **Business Goal:** Helps HR determine fair, data-backed wage levels, avoiding overpaying while maintaining market-level salaries.
+   * **Business Goal:** Helps determine fair, data-backed wage levels, avoiding overpaying while maintaining market-level salaries.
 2. **Attrition Risk (Logistic Regression):**
    * **Algorithm:** `LogisticRegression(max_iter=1000)`
    * **Target:** Risk probability distribution (0 - 100%).
@@ -213,7 +213,7 @@ $$\mathbf{X} = \{\text{Age}, \text{YearsAtCompany}, \text{BaseSalary}, \text{Job
 4. **Employee Categorization (Decision Tree Classifier):**
    * **Algorithm:** `DecisionTreeClassifier(max_depth=6, random_state=42)`
    * **Target:** Multi-class target: `Underperformer` ($0$), `Steady` ($1$), or `High Potential` ($2$).
-   * **Business Logic:** Helps HR isolate underperformers needing training versus critical high-potential talents.
+   * **Business Logic:** Helps isolate underperformers needing training versus critical high-potential talents.
 
 ### Model Training Loop (`train_from_db.py`):
 This script provides live feedback when executed. It connects directly to MySQL, extracts full historical matrices via SQL joins, builds feature vector structures, fits models, serializes current states to `.pkl` formats, and logs results:

@@ -29,7 +29,7 @@ $employees = $pdo->query($query)->fetchAll();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Salary Management - HR AI System</title>
+    <title>Salary Management - AI System</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 

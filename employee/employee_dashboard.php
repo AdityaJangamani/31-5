@@ -126,7 +126,7 @@ try {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Dashboard - HR AI System</title>
+    <title>My Dashboard - AI System</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -447,7 +447,7 @@ try {
                 
                 <?php if (!$prediction_available): ?>
                     <div class="alert alert--warning animate-fade-in" style="margin: 0;">
-                        <strong>AI Predictions Unavailable</strong> — Some critical performance or salary data is missing. Please contact HR to update your records.
+                        <strong>AI Predictions Unavailable</strong> — Some critical performance or salary data is missing. Please contact administration to update your records.
                     </div>
                 <?php else: ?>
                     <div class="dashboard-cards" style="margin-bottom: 1.5rem;">

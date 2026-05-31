@@ -82,7 +82,7 @@ $today = date('Y-m-d');
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manage Attendance — HR AI System</title>
+    <title>Manage Attendance — AI System</title>
     <link rel="stylesheet" href="../css/style.css">
     <style>
         .att-layout { display: grid; grid-template-columns: 320px 1fr; gap: 2rem; align-items: start; }

@@ -103,7 +103,7 @@ $html = <<<HTML
             <td style="background:linear-gradient(135deg,#4F46E5 0%,#7C3AED 100%);
                         padding:36px 40px;text-align:center;">
               <h1 style="margin:0;color:#fff;font-size:26px;letter-spacing:1px;">
-                HR AI System Inc.
+                AI System Inc.
               </h1>
               <p style="margin:8px 0 0;color:#c7d2fe;font-size:14px;">
                 Payslip for the period of &nbsp;<strong style="color:#fff;">{$period}</strong>
@@ -234,7 +234,7 @@ try {
     $mailer->send(
         $data['email'],
         $data['first_name'] . ' ' . $data['last_name'],
-        'Your Payslip for ' . $data['month'] . ' ' . $data['year'] . ' — HR AI System',
+        'Your Payslip for ' . $data['month'] . ' ' . $data['year'] . ' — AI System',
         $html
     );
 

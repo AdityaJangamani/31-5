@@ -47,7 +47,7 @@ try {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HR AI Employee Analytics System</title>
+    <title>AI Employee Analytics System</title>
     <meta name="description" content="An intelligent portal for employee management, remuneration benchmarking, performance insights, and AI attrition predictions.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -466,7 +466,7 @@ try {
 
         <!-- Hero Section -->
         <section class="hero-section">
-            <span class="badge-pill">Intelligence-Driven HR Management</span>
+            <span class="badge-pill">Intelligence-Driven Employee Management</span>
             <h1 class="hero-title">Predict the Future of Your Workforce</h1>
             <p class="hero-subtitle">
                 A premium, AI-powered system designed to analyze employee satisfaction, optimize compensation structures, predict attrition risks, and offer data-driven organizational insights.
@@ -479,13 +479,13 @@ try {
             <div class="portal-card glass-panel" onclick="location.href='auth/admin_login.php'">
                 <div>
                     <div class="portal-icon">🔑</div>
-                    <h2 class="portal-title">Administrator &amp; HR</h2>
+                    <h2 class="portal-title">Administrator &amp; Management</h2>
                     <p class="portal-desc">
                         Manage workforce databases, record daily attendance, design payroll structures, approve payslips, and build/run predictive AI models.
                     </p>
                 </div>
                 <a href="auth/admin_login.php" class="portal-action-btn">
-                    Enter HR Admin Portal <span class="arrow-icon">&rarr;</span>
+                    Enter Admin Portal <span class="arrow-icon">&rarr;</span>
                 </a>
             </div>
 
@@ -571,7 +571,7 @@ try {
 
         <!-- Footer -->
         <footer class="landing-footer">
-            <p>HR AI Employee Analytics &amp; Remuneration System &copy; <?= date('Y') ?> &mdash; Built with Advanced ML Predictions</p>
+            <p>AI Employee Analytics &amp; Remuneration System &copy; <?= date('Y') ?> &mdash; Built with Advanced ML Predictions</p>
         </footer>
     </div>
 </body>

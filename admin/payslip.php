@@ -212,7 +212,7 @@ if (!$data) {
 
             <div class="payslip-container animate-fade-in delay-1">
                 <div class="payslip-header">
-                    <h2>HR AI System Inc.</h2>
+                    <h2>AI System Inc.</h2>
                     <p>Payslip for the month of
                         <?= htmlspecialchars($data['month'] . ' ' . $data['year']) ?>
                     </p>

@@ -18,7 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['post_announcement']))
         $title = trim($_POST['title'] ?? '');
         $content = trim($_POST['content'] ?? '');
         $priority = $_POST['priority'] ?? 'medium';
-        $author = trim($_POST['author'] ?? 'HR Department');
+        $author = trim($_POST['author'] ?? 'Administration');
         
         if (empty($title) || empty($content)) {
             $msg = "Title and content are required fields.";
@@ -243,7 +243,7 @@ try {
                             
                             <div class="form-group">
                                 <label for="author">Author Profile</label>
-                                <input type="text" id="author" name="author" class="form-control" value="HR Department" required>
+                                <input type="text" id="author" name="author" class="form-control" value="Administration" required>
                             </div>
                         </div>
                         

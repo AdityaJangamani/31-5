@@ -18,7 +18,7 @@ try {
         content TEXT NOT NULL,
         priority ENUM('low', 'medium', 'high') DEFAULT 'medium',
         created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-        author VARCHAR(100) DEFAULT 'HR Department'
+        author VARCHAR(100) DEFAULT 'Administration'
     )");
     
     // Seed announcements if empty
@@ -26,8 +26,8 @@ try {
     if ($stmt_count->fetchColumn() == 0) {
         $pdo->exec("INSERT INTO announcements (title, content, priority, author) VALUES 
         ('AI Model Retraining Complete', 'The AI Remuneration & Attrition prediction model has been retrained with the latest employee datasets. Prediction accuracy is now at 92.4%.', 'medium', 'AI System Administrator'),
-        ('Quarterly Performance Appraisals', 'All managers are requested to complete and submit their team evaluations by the end of this week. Please update performance scores in the portal.', 'high', 'HR Director'),
-        ('System Maintenance Notice', 'The HR Portal will undergo scheduled database optimization on Sunday, May 24, from 02:00 AM to 04:00 AM. The system will be temporarily offline.', 'low', 'IT Support Team')");
+        ('Quarterly Performance Appraisals', 'All managers are requested to complete and submit their team evaluations by the end of this week. Please update performance scores in the portal.', 'high', 'Director'),
+        ('System Maintenance Notice', 'The Portal will undergo scheduled database optimization on Sunday, May 24, from 02:00 AM to 04:00 AM. The system will be temporarily offline.', 'low', 'IT Support Team')");
     }
 } catch(PDOException $e) {
     // Log the real error server-side; never expose it to the browser
